@@ -9,15 +9,17 @@ public class SpawnerSample : MonoBehaviour
    
     void Start()
     {
-        Vector3 spawnPosition = transform.position;
-        SpawnPotion(spawnPosition, 2.0f, 15.0f);
-        SpawnPotion(spawnPosition, 5.0f, 15.0f);
-        SpawnPotion(spawnPosition, 2.0f, 8.0f);
+        
+        SpawnPotion(2.0f, 15.0f);
+        SpawnPotion(5.0f, 15.0f);
+        SpawnPotion(2.0f, 8.0f);
 
     }
-    // Let's set 3 parameters (minDistance and maxDistance)
-    void SpawnPotion(Vector3 spawnPosition, float minDistance, float maxDistance)
+    // Let's set 2 parameters (minDistance and maxDistance)
+    void SpawnPotion(float minDistance, float maxDistance)
     {
+        Vector3 spawnPosition = transform.position;
+
         int angle = Random.Range(0, 360);
 
         float distance = Random.Range( minDistance, maxDistance);
