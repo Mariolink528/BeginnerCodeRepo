@@ -32,3 +32,15 @@ public class SpawnerSample : MonoBehaviour
     }
 }
 
+
+// Add a new LootAngle class below:
+public class LootAngle
+{
+    int angle;
+    int step;
+
+    int NextAngle()
+    {
+        int currentAngle = angle;
+    }
+}
