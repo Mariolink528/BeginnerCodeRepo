@@ -15,7 +15,9 @@ public class SpawnerSample : MonoBehaviour
         {
             SpawnPotion(myLootAngle.NextAngle(), 2.0f, 15.0f);
         }
-
+        // Hide the spawner object
+        MeshRenderer mr = GetComponent<MeshRenderer>();
+        mr.enabled = false;
     }
     // Let's set 2 parameters (minDistance and maxDistance)
     void SpawnPotion(int angle, float minDistance, float maxDistance)
