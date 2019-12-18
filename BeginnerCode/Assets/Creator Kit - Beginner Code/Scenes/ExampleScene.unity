@@ -83660,7 +83660,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectToSpawn: {fileID: 2768226103183460623, guid: 2035adf7c54e5624f88f30e554b854a4,
     type: 3}
-  numberOfSpawns: 1
+  numberOfSpawns: 3
 --- !u!136 &1944017017
 CapsuleCollider:
   m_ObjectHideFlags: 0
